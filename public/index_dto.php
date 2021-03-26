@@ -11,9 +11,7 @@ error_reporting(E_ALL);
 
 require(__DIR__ . '/../vendor/autoload.php');
 
-use yii\base\Model;
-
-class DataModel extends Model
+class DataModel
 {
     public $data;
     public $data2;
@@ -37,8 +35,6 @@ foreach (range(1, 1000000) as $item) {
 foreach ($collection as $key => $model) {
     $model->data = 'wfeqwfqwefqwefqrgfrewgwergwegergergregпоеноеооооооооооооооооо-' . $key;
     $model->data2 = 'wfeqwfqwefqwefqrgfrewgwergwegergergregпоеноеооооооооооооооооо-' . $key;
-
-    $model->getInt();
 }
 
 $result = microtime(true) - $start;
