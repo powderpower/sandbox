@@ -1,0 +1,13 @@
+{
+    "name": "powderpower/sandbox",
+    "description": "Песочница",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Billy Bim",
+            "email": "ace7upp@gmail.com"
+        }
+    ],
+    "require": {}
+}
